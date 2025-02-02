@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(45deg, #4b0082,#000, #000, #4b0082);
+    color: #fff;
+    height: 100%;
+}

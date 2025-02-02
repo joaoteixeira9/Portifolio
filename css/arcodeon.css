@@ -1,0 +1,67 @@
+@import url('./global.css');
+
+.arcodeon{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid #fff;
+    margin: 1rem 0;
+    transition: .15s ;
+}
+
+.arcodeon:hover, .arcodeon.open{
+    background-color: #4b0082;
+    border-color: #4b0082;
+}
+
+.arcodeon .trigger{
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+}
+
+.arcodeon .trigger::after{
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-image: url('../img/seta.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: .25s;
+}
+
+.arcodeon.open .trigger::after{
+    transform: rotate(180deg);
+}
+
+.trigger:hover{
+    cursor: pointer;
+}
+
+.arcodeon ul{
+    display: none;
+}
+
+.arcodeon.open ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-right: 1rem;
+    list-style: none;
+    gap: 2rem;
+}
+
+li{
+    padding: .2rem;
+}

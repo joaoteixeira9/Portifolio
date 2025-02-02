@@ -1,0 +1,76 @@
+@import url("/css/global.css");
+@import url("/css/arcodeon.css");
+@import url("/css/portifolio.css");
+@import url("/css/experiencia.css");
+@import url("/css/skills.css");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+}
+
+header .foto{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+header .titulo{
+    text-align: center;
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header .info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.info p{
+    margin: .5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.125rem;
+}
+
+.info p::before{
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: .5rem;
+}
+
+.info .person::before{
+    background-image: url('../img/person.svg');
+}
+
+.info .map::before{
+    background-image: url('../img/mail.svg');
+}
+
+.info .mail::before{
+    background-image: url('../img/map.svg');
+}
+
+.info a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.info a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
